@@ -39,7 +39,8 @@
 }
 
 .about-page, 
-.contact-page {
+.contact-page,
+.funfacts-page {
     .text-zone {
         position: absolute;
         left: 10%;
@@ -96,6 +97,29 @@
                 animation-delay: 1.1s;
                 
             }
+        }
+    }
+}
+.funfacts-page {
+    .text-zone2 {
+        position: absolute;
+        left: 50%;
+        top: 70%;
+        transform: translateY(50%);
+        width: 35%;
+        vertical-align: text-top;
+        display: table-cell;
+        max-height: 90%;
+
+        h2 {
+            font-size: 25px;
+            font-family: 'Coolvetica';
+            color: #ffd700;
+            font-weight: 400;
+            margin-top: 0;
+            position: fixed;
+            margin-bottom: 40px;
+            left: 10px;
         }
     }
 }
