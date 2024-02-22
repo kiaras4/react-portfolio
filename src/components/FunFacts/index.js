@@ -1,14 +1,5 @@
 import { useEffect, useState } from 'react'
-import jack from '../../assets/images/jack.png'
-
-import pic2 from '../../assets/images/Pumba.png'
-import pic3 from '../../assets/images/iris.png'
-import pic4 from '../../assets/images/soccer1.png'
-import pic5 from '../../assets/images/bun1.png'
-import pic6 from '../../assets/images/bun2.png'
-
-
-
+import Picture from './Picture'
 
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
@@ -18,12 +9,6 @@ import './index.scss'
 const FunFacts = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
- /* useEffect(() => {
-    return setTimeout(() => {
-      setLetterClass('text-animate-hover')
-    }, 3000)
-  }, [])
-*/
   return (
     <>
       <div className="container funfacts-page">
@@ -55,7 +40,10 @@ const FunFacts = () => {
           * Jack doesn't wear shoes 
           </p>
           <p align='LEFT'>
-          * Jack is also very nice, despite bullying me with discrete.
+          * Jack is very nice, even though discrete is bullying me.
+          </p>
+          <p align='LEFT'>
+          * Seeing the brightside/funny pov makes life a lot more enjoyable. 
           </p>
         </div>
         <div className='text-zone2'>
@@ -66,10 +54,8 @@ const FunFacts = () => {
               idx={15}
             />
           </h2>
-          <div className="stage-cube-cont">
-              <img src={jack}/>
-          </div>
-        </div>
+         </div>
+         <Picture />
       </div>
       <Loader type="pacman" />
     </>
