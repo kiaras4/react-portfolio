@@ -89,6 +89,12 @@
             }
         }
 
+        a.funfacts-link {
+            &:after {
+                content: 'FACTS';
+            }
+        }
+
         a.active {
             svg {
                 color: #ffd700; 
